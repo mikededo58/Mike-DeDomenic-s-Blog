@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike DeDomenic's Blog</title>
+    <link rel="stylesheet" href="./Assets/css/styles.css" />
+    <link rel="stylesheet" href="./Assets/css/form.css" />
+  </head>
+  <body class="container dark">   
+    <header>
+      <div class="row toggle">
+        <div class="col">
+          <p>DARK MODE</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>LIGHT MODE</p>
+        </div>
+      </div>
+      <div class="row">
+    </header>
+    <main>
+      <aside><h1>Welcome to your happy place!</h1></aside>
+      <div class="form">
+        <h1>What's on your mind?</h1>
+        <input type="text" placeholder="Username" id="user" />
+        <input type="text" placeholder="Title" id="title" />
+        <textarea type="text" placeholder="Content" id="content"></textarea>
+        <button type="submit" id="submit">Submit</button>
+        <p id="error"></p>
+      </div>
+    </main>
+    <script src="./Assets/js/logic.js"></script>
+    <script src="./Assets/js/form.js"></script>
+  </body>
+</html>
