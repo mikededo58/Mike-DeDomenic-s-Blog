@@ -18,7 +18,7 @@ Above is alo a screen shot of each webpage when it is working
 # Installation
 
 No special instalation is required. this is running on gitub and here is a link to the repo:https://github.com/mikededo58/Mike-DeDomenic-s-Blog
-And here is link to the webpage:
+And here is link to the webpage:https://mikededo58.github.io/Mike-DeDomenic-s-Blog/
 
 # Usage
 

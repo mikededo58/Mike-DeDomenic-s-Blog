@@ -7,7 +7,7 @@ const blogSub = document.querySelector("#blog-post");
 const blogPosts = JSON.parse(localStorage.getItem("blogEntry")) || [];
 console.log(blogPosts);
 function renderBlogPost() {
-  // creating function to add blog post to li
+  // creating function to add blog post
 
   for (let i = 0; i < blogPosts.length; i++) {
     const blogPost = blogPosts[i]; //points to current array
@@ -28,7 +28,7 @@ function renderBlogPost() {
     const content = document.createElement("p");
     content.textContent = blogPost.content;
 
-    container.appendChild(content);
+    container.appendChild(content); // appending objects to newly created classes
 
     blogSub.appendChild(container);
   }

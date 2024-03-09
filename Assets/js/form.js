@@ -4,16 +4,13 @@ const errorTextVal = document.getElementById("error");
 const titleVal = document.getElementById("title");
 const contentVal = document.getElementById("content");
 
-// blog form
-//created elements
-//render the blog
-
 //for submit
 //redirect function,
 //submit form
 // use JSON to Save
 // Create object
 
+//Submit button to listin to input and create object
 submitButton.addEventListener("click", function (event) {
   event.preventDefault();
   const blogsData = JSON.parse(localStorage.getItem("blogEntry")) || [];
@@ -24,7 +21,7 @@ submitButton.addEventListener("click", function (event) {
     content: contentVal.value.trim(),
   };
   blogsData.push(blogEntry);
-
+  //storing object as an array in local storage
   localStorage.setItem("blogEntry", JSON.stringify(blogsData));
   renderMessage();
 });
@@ -41,7 +38,8 @@ function renderMessage() {
   }
 }
 
+// redirecting to blog page function
 function redirectPage() {
   window.location.href =
-    "file:///Users/michaeldedomenic/Desktop/mike-personal-blog/Mike-DeDomenic-s-Blog/blog.html";
+    "https://mikededo58.github.io/Mike-DeDomenic-s-Blog/blog";
 }
